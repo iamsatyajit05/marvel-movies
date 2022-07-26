@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon/Avengers.png" type="image/x-icon">
+    <title>Marvel Movies</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Marvel Movies</h1>
+        <input type="checkbox" class="hidden" id="check">
+        <div class="navBAR">
+            <ul class="changeOrder">
+                <li class="navBarLink" id="navBarBtn1" onclick="sortRelaese()">Release Order</li>
+                <li class="navBarLink" id="navBarBtn2" onclick="sortChronology()">Chronological Order</li>
+                <li class="navBarLink" id="navBarBtn3" onclick="showMyNode(1, 'pases1')">Pases 1</li>
+                <li class="navBarLink" id="navBarBtn4" onclick="showMyNode(1, 'pases2')">Pases 2</li>
+                <li class="navBarLink" id="navBarBtn5" onclick="showMyNode(1, 'pases3')">Pases 3</li>
+                <li class="navBarLink" id="navBarBtn6" onclick="showMyNode(1, 'pases4')">Pases 4</li>
+                <li class="navBarLink" id="navBarBtn7" onclick="showMyNode(1, 'series')">Series</li>
+            </ul>
+            <ul class="statics">
+                <p>Total Movies: <span id="totalMovie">50</span></p>
+                <p>Want To Movies: <span id="movieCount">50</span></p>
+            </ul>
+            <ul class="resetUl">
+                <button id="reset">RESET</button>
+            </ul>
+        </div>
+        <div class="responisiveBar">
+            <label for="check">
+                <img class="btnImg" src="navbarBtn.png" alt="">
+            </label>
+        </div>
+    </nav>
+
+    <main>
+        <div id="mainBox">
+            <!-- <li class="movieList pases3">
+                <p class="movieName">Lorem dolor sit amet 3</p>
+                <button class="movieBtn">X</button>
+            </li> -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
